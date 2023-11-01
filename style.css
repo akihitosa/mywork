@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  color: #2d2d2d;
+  color: #24292E;
   font-family: "Crimson Text", serif;
 }
 
@@ -22,9 +22,40 @@ a {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 0 18px;
+  padding: 0 9.2%;
+} /*-------------------------------------------
+header
+-------------------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 113.1px 0 109px 0;
+  margin-right: -108px;
+}
+.header img {
+  vertical-align: top;
+}
+.header ul {
+  display: flex;
+  padding-top: 10px;
+}
+.header ul li {
+  padding-top: 1px;
+  font-size: 0.875rem;
+  padding-right: 29px;
+}
+.header ul li .fa-brands {
+  font-size: 1.6em;
+}
+
+/*-------------------------------------------
+mainvisuar
+-------------------------------------------*/
+.mainvisuar {
+  height: 420px;
+  object-fit: cover;
 }
 
 /*-------------------------------------------

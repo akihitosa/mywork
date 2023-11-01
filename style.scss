@@ -19,10 +19,38 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 0 4%;
-}
+  padding: 0 9.2%;
+}/*-------------------------------------------
+header
+-------------------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 113.1px 0 109px 0;
+  margin-right: -108px;
+  img {
+    vertical-align: top;
+  }
+  ul {
+    display: flex;
+    padding-top: 10px;
+    li {
+      padding-top: 1px;
+      font-size: 0.875rem;
+      padding-right: 29px;
+      .fa-brands {
+        font-size: 1.6em;
+      }
+      }
+    }
+  }
+
+/*-------------------------------------------
+mainvisuar
+-------------------------------------------*/
+
 
 /*-------------------------------------------
 SP
