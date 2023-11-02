@@ -55,7 +55,20 @@ mainvisuar
 -------------------------------------------*/
 .mainvisuar {
   height: 420px;
-  object-fit: cover;
+  margin-bottom: 87px;
+}
+.mainvisuar img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*-------------------------------------------
+mainvisuar
+-------------------------------------------*/
+.about h2 {
+  margin-bottom: 74px;
+  text-align: center;
 }
 
 /*-------------------------------------------
