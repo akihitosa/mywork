@@ -23,8 +23,6 @@ a {
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
   padding: 0 4%;
 }
 
@@ -103,7 +101,7 @@ work
 
 .wrok {
   display: grid;
-  grid-template-columns: 273px 273px 273px;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 13px;
   margin-bottom: 148px;
 }
