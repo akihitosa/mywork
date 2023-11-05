@@ -23,6 +23,8 @@ a {
 }
 
 .container {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 0 4%;
 }
 
@@ -55,7 +57,7 @@ header
 mainvisuar
 -------------------------------------------*/
 .mainvisuar {
-  height: 420px;
+  height: 100vh;
   margin-bottom: 75px;
 }
 .mainvisuar img {
@@ -176,6 +178,11 @@ contact
   background-color: #24292E;
   margin-bottom: 140px;
   font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #24292E;
+}
+.contact .button:hover {
+  color: #24292E;
+  background-color: #FFFFFF;
 }
 
 /*-------------------------------------------
