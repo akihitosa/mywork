@@ -3,73 +3,379 @@
 html {
   font-size: 100%;
 }
+
 body {
   color: #24292E;
   font-family: 'Crimson Text', serif;
+  font-size: 0.9rem;
 }
+
 img {
-  max-width: 100%;
+  width: 100%;
   vertical-align: bottom;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   color: #2d2d2d;
   text-decoration: none;
 }
+
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 9.2%;
-}/*-------------------------------------------
+  padding: 0 4%;
+}
+
+/*-------------------------------------------
 header
 -------------------------------------------*/
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 113.1px 0 109px 0;
-  margin-right: -108px;
+  padding: 113.1px 0 115px 0;
+  margin: 0 -9px 0 18px;
+
   img {
     vertical-align: top;
   }
+
   ul {
     display: flex;
     padding-top: 10px;
+
     li {
       padding-top: 1px;
       font-size: 0.875rem;
       padding-right: 29px;
+
       .fa-brands {
         font-size: 1.6em;
       }
-      }
     }
   }
+}
 
 /*-------------------------------------------
 mainvisuar
 -------------------------------------------*/
 .mainvisuar {
-    height: 420px;
-    margin-bottom: 87px;
-    img {
-        height: 100%;
-        object-fit: cover;
-    }
+  height: 420px;
+  margin-bottom: 75px;
+
+  img {
+    height: 100%;
+    object-fit: cover;
   }
+}
+
 /*-------------------------------------------
-mainvisuar
+about
 -------------------------------------------*/
 .about {
-    h2 {
-        margin-bottom: 74px;
-        text-align: center;
-    }
+  margin-left: 7px;
+  margin-bottom: 130px;
+
+  h2 {
+    margin: 0 0 59px -6px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .about-p1 {
+    margin-bottom: 23px;
+  }
+
+  ul {
+    margin-bottom: 30px;
+  }
+
+  li {
+    letter-spacing: -0.54px;
+    margin-bottom: -6px;
+  }
+
+  .text-space {
+    padding-right: 15px;
+    line-height: 24px;
+  }
 }
+
+/*-------------------------------------------
+work
+-------------------------------------------*/
+.wrok1 {
+  text-align: center;
+  margin-bottom: 65px;
+}
+.wrok {
+  display: grid;
+  grid-template-columns: 273px 273px 273px;
+  gap: 13px;
+  margin-bottom: 148px;
+}
+
+/*-------------------------------------------
+news
+-------------------------------------------*/
+.news {
+  margin-bottom: 127px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 62px;
+  }
+
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 44.2px;
+  }
+
+  dt {
+    width: 22%;
+    border-top: 1px solid #C8C8C8;
+    padding-left: 24.7px;
+  }
+
+  dd {
+    width: 78%;
+    border-top: 1px solid #C8C8C8;
+  }
+
+  .news1 {
+    border-bottom: solid 1px #C8C8C8;
+  }
+}
+
+/*-------------------------------------------
+contact
+-------------------------------------------*/
+.contact {
+  text-align: center;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    margin-bottom: -10px;
+
+    label {
+      width: 14%;
+      text-align: start;
+    }
+
+    input,
+    textarea {
+      width: 86%;
+    }
+
+    input,
+    textarea {
+      border: 1px solid #C8C8C8;
+    }
+
+    input {
+      padding: 10px 0;
+    }
+
+    textarea {
+      padding: 2px 0;
+    }
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 86px;
+    color: #FFFFFF;
+    background-color: #24292E;
+    margin-bottom: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+footer {
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #24292E;
+  font-size: 0.625rem;
+  padding: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /*-------------------------------------------
 SP
 -------------------------------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
+  .mainvisuar {
+    .img-sp {
+      display: none;
+    }
+  }
+}
 
+@media screen and (max-width: 600px) {
+  /*-------------------------------------------
+header sp
+-------------------------------------------*/
+
+  .header {
+    margin: 13px 0 1px 0;
+    padding: 0;
+    display: block;
+
+    h1 {
+      width: 120px;
+      margin: 0 auto;
+    }
+
+    ul {
+      margin-left: 48px;
+      padding: 0;
+
+      li {
+        padding-right: 15px;
+      }
+    }
+  }
+
+  /*-------------------------------------------
+mainvisuar sp
+-------------------------------------------*/
+
+  .mainvisuar {
+    .img-pc {
+      display: none;
+    }
+  }
+
+  /*-------------------------------------------
+about sp
+-------------------------------------------*/
+  .about {
+    margin: 0 0 64px 0;
+
+    h2 {
+      margin-left: 1px;
+      margin-bottom: 34px;
+    }
+
+    ul {
+      line-height: 20.2px;
+    }
+
+    li {
+      padding-right: 35px;
+    }
+
+    .text-space {
+      padding-right: 0;
+      line-height: 25px;
+    }
+  }
+
+  /*-------------------------------------------
+wrok sp
+-------------------------------------------*/
+
+  .wrok {
+    margin-bottom: 76px;
+
+    h2 {
+      text-align: center;
+      letter-spacing: 1px;
+      margin-bottom: 23px;
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    div {
+      margin-bottom: 11px;
+    }
+  }
+
+  /*-------------------------------------------
+news sp
+-------------------------------------------*/
+  .news {
+    margin-bottom: 68px;
+
+    h2 {
+      margin-bottom: 34px;
+    }
+
+    dl {
+      display: block;
+      line-height: 15px;
+
+      dt {
+        letter-spacing: -0.6px;
+        padding: 15px 0 0 14px;
+        width: 100%;
+        margin-bottom: 0px;
+      }
+
+      dd {
+        padding: 0 16px 12px 14px;
+        border: 0;
+        width: 100%;
+        line-height: 20px;
+      }
+
+      .news2 {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  /*-------------------------------------------
+contact sp
+-------------------------------------------*/
+  .contact {
+    text-align: center;
+
+    h2 {
+      margin-bottom: 34px;
+    }
+
+    div {
+      display: inline-block;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 3px;
+
+      label {
+        display: block;
+        margin-bottom: 2px;
+        text-align: start;
+      }
+
+      input {
+        width: 100%;
+        padding: 9px 0;
+      }
+
+      textarea {
+        width: 100%;
+      }
+    }
+
+    .button {
+      text-align: center;
+      margin: 16px 0 69px 0;
+    }
+  }
 }

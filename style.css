@@ -5,10 +5,11 @@ html {
 body {
   color: #24292E;
   font-family: "Crimson Text", serif;
+  font-size: 0.9rem;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   vertical-align: bottom;
 }
 
@@ -24,15 +25,17 @@ a {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 9.2%;
-} /*-------------------------------------------
+  padding: 0 4%;
+}
+
+/*-------------------------------------------
 header
 -------------------------------------------*/
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 113.1px 0 109px 0;
-  margin-right: -108px;
+  padding: 113.1px 0 115px 0;
+  margin: 0 -9px 0 18px;
 }
 .header img {
   vertical-align: top;
@@ -55,7 +58,7 @@ mainvisuar
 -------------------------------------------*/
 .mainvisuar {
   height: 420px;
-  margin-bottom: 87px;
+  margin-bottom: 75px;
 }
 .mainvisuar img {
   height: 100%;
@@ -64,13 +67,258 @@ mainvisuar
 }
 
 /*-------------------------------------------
-mainvisuar
+about
 -------------------------------------------*/
+.about {
+  margin-left: 7px;
+  margin-bottom: 130px;
+}
 .about h2 {
-  margin-bottom: 74px;
+  margin: 0 0 59px -6px;
   text-align: center;
+  font-size: 1.5rem;
+}
+.about .about-p1 {
+  margin-bottom: 23px;
+}
+.about ul {
+  margin-bottom: 30px;
+}
+.about li {
+  letter-spacing: -0.54px;
+  margin-bottom: -6px;
+}
+.about .text-space {
+  padding-right: 15px;
+  line-height: 24px;
+}
+
+/*-------------------------------------------
+work
+-------------------------------------------*/
+.wrok1 {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.wrok {
+  display: grid;
+  grid-template-columns: 273px 273px 273px;
+  gap: 13px;
+  margin-bottom: 148px;
+}
+
+/*-------------------------------------------
+news
+-------------------------------------------*/
+.news {
+  margin-bottom: 127px;
+}
+.news h2 {
+  text-align: center;
+  margin-bottom: 62px;
+}
+.news dl {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 44.2px;
+}
+.news dt {
+  width: 22%;
+  border-top: 1px solid #C8C8C8;
+  padding-left: 24.7px;
+}
+.news dd {
+  width: 78%;
+  border-top: 1px solid #C8C8C8;
+}
+.news .news1 {
+  border-bottom: solid 1px #C8C8C8;
+}
+
+/*-------------------------------------------
+contact
+-------------------------------------------*/
+.contact {
+  text-align: center;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  margin-bottom: -10px;
+}
+.contact div label {
+  width: 14%;
+  text-align: start;
+}
+.contact div input,
+.contact div textarea {
+  width: 86%;
+}
+.contact div input,
+.contact div textarea {
+  border: 1px solid #C8C8C8;
+}
+.contact div input {
+  padding: 10px 0;
+}
+.contact div textarea {
+  padding: 2px 0;
+}
+.contact .button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 86px;
+  color: #FFFFFF;
+  background-color: #24292E;
+  margin-bottom: 140px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+footer {
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #24292E;
+  font-size: 0.625rem;
+  padding: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*-------------------------------------------
 SP
--------------------------------------------*//*# sourceMappingURL=style.css.map */
+-------------------------------------------*/
+@media screen and (min-width: 600px) {
+  .mainvisuar .img-sp {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*-------------------------------------------
+  header sp
+  -------------------------------------------*/
+  .header {
+    margin: 13px 0 1px 0;
+    padding: 0;
+    display: block;
+  }
+  .header h1 {
+    width: 120px;
+    margin: 0 auto;
+  }
+  .header ul {
+    margin-left: 48px;
+    padding: 0;
+  }
+  .header ul li {
+    padding-right: 15px;
+  }
+  /*-------------------------------------------
+  mainvisuar sp
+  -------------------------------------------*/
+  .mainvisuar .img-pc {
+    display: none;
+  }
+  /*-------------------------------------------
+  about sp
+  -------------------------------------------*/
+  .about {
+    margin: 0 0 64px 0;
+  }
+  .about h2 {
+    margin-left: 1px;
+    margin-bottom: 34px;
+  }
+  .about ul {
+    line-height: 20.2px;
+  }
+  .about li {
+    padding-right: 35px;
+  }
+  .about .text-space {
+    padding-right: 0;
+    line-height: 25px;
+  }
+  /*-------------------------------------------
+  wrok sp
+  -------------------------------------------*/
+  .wrok {
+    margin-bottom: 76px;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrok h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 23px;
+  }
+  .wrok div {
+    margin-bottom: 11px;
+  }
+  /*-------------------------------------------
+  news sp
+  -------------------------------------------*/
+  .news {
+    margin-bottom: 68px;
+  }
+  .news h2 {
+    margin-bottom: 34px;
+  }
+  .news dl {
+    display: block;
+    line-height: 15px;
+  }
+  .news dl dt {
+    letter-spacing: -0.6px;
+    padding: 15px 0 0 14px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .news dl dd {
+    padding: 0 16px 12px 14px;
+    border: 0;
+    width: 100%;
+    line-height: 20px;
+  }
+  .news dl .news2 {
+    border-bottom: 0;
+  }
+  /*-------------------------------------------
+  contact sp
+  -------------------------------------------*/
+  .contact {
+    text-align: center;
+  }
+  .contact h2 {
+    margin-bottom: 34px;
+  }
+  .contact div {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 3px;
+  }
+  .contact div label {
+    display: block;
+    margin-bottom: 2px;
+    text-align: start;
+  }
+  .contact div input {
+    width: 100%;
+    padding: 9px 0;
+  }
+  .contact div textarea {
+    width: 100%;
+  }
+  .contact .button {
+    text-align: center;
+    margin: 16px 0 69px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
